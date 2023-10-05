@@ -1,0 +1,55 @@
+{
+  "name": "mosaicnodeapp",
+  "version": "0.0.0",
+  "private": true,
+  "description": "This is an application which will interact with Angular front end for customer details and provide data according to the request",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node ./node_modules/mocha/bin/mocha -t 10000  -R spec ./test > report 2>&1 | tee report",
+    "test-report": "node ./node_modules/mocha/bin/mocha -t 10000 ./test --reporter mochawesome"
+  },
+  "keywords": [
+    "node"
+  ],
+  "dependencies": {
+    "adal-node": "^0.2.2",
+    "atob": "^2.1.2",
+    "body-parser": "^1.19.0",
+    "chai-http": "^4.3.0",
+    "chai-json-schema": "^1.5.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.1.1",
+    "debug": "^4.3.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "guid": "0.0.12",
+    "http-errors": "^1.8.0",
+    "https-agent": "^1.0.0",
+    "moch": "0.0.1",
+    "mssql": "^6.3.1",
+    "node-cron": "^3.0.0",
+    "nodemailer": "^6.7.2",
+    "performance-now": "^2.1.0",
+    "pug": "^2.0.4",
+    "redis": "^3.1.0",
+    "request": "^2.88.2",
+    "require": "^2.4.20",
+    "swagger-jsdoc": "^3.7.0",
+    "swagger-ui-express": "^4.1.6",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^6.2.3",
+    "nodemon": "^2.0.7",
+    "supertest": "^4.0.2",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^6.0.1"
+  },
+  "author": "Rakesh Reddy Allapuram",
+  "license": "ISC"
+}
